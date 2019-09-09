@@ -18,13 +18,17 @@ You can use `offset` to offset the image from its default position.
 <div class="header"><img src="/images/bandcamp wordart.png" /></div>
 
 {% assign sorted_photos = site.images | sort: "weight" | reverse %}
-<div class="wrapper">
-{% for image in sorted_photos  %}
-    <div class="box">
-        <a href="{{ image.url }}">
-            <img src="{{ image.image_path }}" alt="{{ image.title }}"
-            style="left:{{image.offset.x}};top:{{image.offset.y}};"/>
-        </a>
+<div class="content">
+    <div>
+        <div>
+        {% for image in sorted_photos  %}
+            <div class="box">
+                <a href="{{ image.url }}">
+                    <img src="{{ image.image_path }}" alt="{{ image.title }}"
+                    style="left:{{image.offset.x}};top:{{image.offset.y}};"/>
+                </a>
+            </div>
+        {% endfor %}
+        </div>
     </div>
-{% endfor %}
 </div>

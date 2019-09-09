@@ -4,10 +4,19 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.wrapper {
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+.content > div {
+    display: inline-block;
+    max-width: 60rem;
+}
+
+.content > div > div {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-gap: 3%;
+    grid-template-columns: 33% 33% 33%;
 }
 
 .header {
@@ -15,9 +24,8 @@ body {
 }
 
 .header > img {
-    width: 30%;
-    position: relative;
-    top: -2rem;
+    margin: 2rem;
+    width: 45%;
 }
 
 .box {
