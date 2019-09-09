@@ -1,8 +1,9 @@
 ---
 image_path: /images/internet addiction.jpg
 title: Internet Addiction
-weight: 0
+title_link: https://bowsamic.bandcamp.com/album/internet-addiction
+weight: 6
 offset:
-    x: 4rem
+    x: -1rem
     y: 2rem
 ---

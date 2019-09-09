@@ -6,4 +6,10 @@ layout: default
 
 <div class="big-image">
     <img src="{{ page.image_path }}" alt="{{ page.title }}"/>
+
+    {% if page.title_link %}
+        <a href="{{ page.title_link }}" target="_blank"><p>{{ page.title }}</p></a>
+    {% else %}
+        <p>{{ page.title }}</p>
+    {% endif %}
 </div>

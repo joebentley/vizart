@@ -1,5 +1,7 @@
 body {
     margin: 2rem;
+    margin-bottom: 10rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .wrapper {
@@ -31,6 +33,18 @@ body {
     text-align: center;
 }
 
+@font-face {
+    font-family: 'barcode';
+    src:
+        url('Paskowy.ttf')
+        format('truetype');
+}
+
+.big-image p {
+    font-family: barcode, monospace;
+    font-size: 40pt;
+}
+
 .big-image > img {
     width: 50%;
 }
@@ -41,4 +55,16 @@ body {
 
 .back-to-gallery > img {
     width: 6rem;
+}
+
+.links {
+    position: relative;
+    width: 100%;
+}
+
+.about {
+    position: relative;
+    left: 30%;
+    width: 30rem;
+    top: 4rem;
 }

@@ -1,7 +1,9 @@
 ---
 image_path: /images/dam edited.png
 title: Dam
-weight: 3
+title_url: https://soundcloud.com/bowsamic/jan-hammer-ban-hammer?in=bowsamic/sets/assorted-songs
+weight: 4
 offset:
     x: -1rem
+    y: 2rem
 ---
