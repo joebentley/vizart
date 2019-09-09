@@ -1,4 +1,5 @@
 ---
+layout: default
 ---
 <!-- 
 Add new image descriptors to /_images, add images themselves to /images.
@@ -6,22 +7,14 @@ You can use `weight` to change image order (highest first).
 You can use `offset` to offset the image from its default position.
  -->
 
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>ViZaRt</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    {% assign sorted_photos = site.images | sort: "weight" | reverse %}
-    <div class="wrapper">
-    {% for image in sorted_photos  %}
-        <div class="box">
+{% assign sorted_photos = site.images | sort: "weight" | reverse %}
+<div class="wrapper">
+{% for image in sorted_photos  %}
+    <div class="box">
+        <a href="{{ image.url }}">
             <img src="{{ image.image_path }}" alt="{{ image.title }}"
             style="left:{{image.offset.x}};top:{{image.offset.y}};"/>
-        </div>
-    {% endfor %}
-        </div>
-  </body>
-</html>
+        </a>
+    </div>
+{% endfor %}
+</div>

@@ -12,7 +12,23 @@ body {
     padding: 2rem;
 }
 
-.box > img {
+.box img {
     width: 100%;
     position: relative;
+}
+
+.big-image {
+    text-align: center;
+}
+
+.big-image > img {
+    width: 50%;
+}
+
+.back-to-gallery {
+    position: fixed;
+}
+
+.back-to-gallery > img {
+    width: 6rem;
 }
