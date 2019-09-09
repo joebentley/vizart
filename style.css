@@ -1,0 +1,18 @@
+body {
+    margin: 2rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 3%;
+}
+
+.box {
+    padding: 2rem;
+}
+
+.box > img {
+    width: 100%;
+    position: relative;
+}
