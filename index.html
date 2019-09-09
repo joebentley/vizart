@@ -7,6 +7,8 @@ You can use `weight` to change image order (highest first).
 You can use `offset` to offset the image from its default position.
  -->
 
+<div class="header"><img src="/images/bandcamp wordart.png" /></div>
+
 {% assign sorted_photos = site.images | sort: "weight" | reverse %}
 <div class="wrapper">
 {% for image in sorted_photos  %}

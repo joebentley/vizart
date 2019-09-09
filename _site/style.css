@@ -8,6 +8,16 @@ body {
     grid-gap: 3%;
 }
 
+.header {
+    text-align: center;
+}
+
+.header > img {
+    width: 30%;
+    position: relative;
+    top: -2rem;
+}
+
 .box {
     padding: 2rem;
 }
