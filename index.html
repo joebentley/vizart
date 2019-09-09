@@ -1,5 +1,11 @@
 ---
 ---
+<!-- 
+Add new image descriptors to /_images, add images themselves to /images.
+You can use `weight` to change image order (highest first).
+You can use `offset` to offset the image from its default position.
+ -->
+
 <!doctype html>
 <html>
   <head>
@@ -12,7 +18,8 @@
     <div class="wrapper">
     {% for image in sorted_photos  %}
         <div class="box">
-            <img src="{{ image.image_path }}" alt="{{ image.title }}"/>
+            <img src="{{ image.image_path }}" alt="{{ image.title }}"
+            style="left:{{image.offset.x}};top:{{image.offset.y}};"/>
         </div>
     {% endfor %}
         </div>
