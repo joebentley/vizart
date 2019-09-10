@@ -24,8 +24,16 @@ You can use `offset` to offset the image from its default position.
         {% for image in sorted_photos  %}
             <div class="box">
                 <a href="{{ image.url }}">
+                    <!-- Add hover animation if there is a hover image available -->
+                    {% if image.hover_image_path %}
                     <img src="{{ image.image_path }}" alt="{{ image.title }}"
-                    style="left:{{image.offset.x}};top:{{image.offset.y}};"/>
+                        style="left:{{image.offset.x}};top:{{image.offset.y}};"
+                        onMouseOver="this.src=&quot;{{ image.hover_image_path}}&quot;"
+                        onMouseOut="this.src=&quot;{{ image.image_path}}&quot;" />
+                    {% else %}
+                    <img src="{{ image.image_path }}" alt="{{ image.title }}"
+                        style="left:{{image.offset.x}};top:{{image.offset.y}};"/>
+                    {% endif %}
                 </a>
             </div>
         {% endfor %}

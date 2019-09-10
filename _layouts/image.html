@@ -5,7 +5,11 @@ layout: default
 <a href="/" class="back-to-gallery"><img src="/images/back-to-gallery.png"/></a>
 
 <div class="big-image">
+    {% if page.big_image_path %}
+    <img src="{{ page.big_image_path }}" alt="{{ page.title }}"/>
+    {% else %}
     <img src="{{ page.image_path }}" alt="{{ page.title }}"/>
+    {% endif %}
 
     {% if page.title_link %}
         <a href="{{ page.title_link }}" target="_blank"><p>{{ page.title }}</p></a>
