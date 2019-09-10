@@ -4,6 +4,6 @@ title: Dam
 title_link: https://soundcloud.com/bowsamic/jan-hammer-ban-hammer?in=bowsamic/sets/assorted-songs
 weight: 4
 offset:
-    x: 2rem
+    x: -2rem
     y: -2rem
 ---
